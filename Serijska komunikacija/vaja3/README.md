@@ -22,19 +22,22 @@ Ob pritisku tipke se znak doda v niz, ki predstavlja sporočilo:
 if (digitalRead(tipkaA) == LOW) {
   sporocilo += "A";
 }
-Pošiljanje sporočila
+``` 
+##Pošiljanje sporočila
 Sporočilo se pošlje ob pritisku tipke za pošiljanje:
 
-cpp
+``` cpp
 mySerial.println(sporocilo);
 sporocilo = "";
+```
 ##Sprejem podatkov v realnem času
 Mikrokrmilnik sproti preverja, ali so na voljo podatki za sprejem:
 
-cpp
+```cpp
 if (mySerial.available()) {
   Serial.write(mySerial.read());
 }
+```
 ##Ugotovitve
 Tipke omogočajo enostaven vnos znakov
 
@@ -44,4 +47,5 @@ Mikrokrmilnika lahko delujeta hkrati brez čakanja drug na drugega
 
 ## Zaključek
 V vaji smo uspešno izdelali preprosto tipkovnico in omogočili realnočasovno
+
 komunikacijo med dvema mikrokrmilnikoma.
