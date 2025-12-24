@@ -33,18 +33,19 @@ Združi prejete bajte nazaj v celotno vrednost
 
 Izpiše vrednost na serijski monitor
 
-Ključna koda:
+**Ključna koda:**
 
 ```cpp
 int potValue = (incomingData[0] << 8) | incomingData[1];
 Serial.println(potValue);
 ```
 ## Ugotovitve
-ESP-NOW omogoča hitro peer-to-peer pošiljanje podatkov brez interneta
+- ESP-NOW omogoča hitro peer-to-peer pošiljanje podatkov brez interneta
 
-Callback funkcija omogoča samodejni prejem podatkov
+- Callback funkcija omogoča samodejni prejem podatkov
 
-Pretvorba analogne vrednosti v bajte omogoča pošiljanje večjih številk
-Vaja je uspešno prikazala, kako ESP32 preko ESP-NOW pošilja in prejema analogne vrednosti.
+- Pretvorba analogne vrednosti v bajte omogoča pošiljanje večjih številk
+- Vaja je uspešno prikazala, kako ESP32 preko ESP-NOW pošilja in prejema analogne vrednosti.
 
-Spoznal sem uporabo callback funkcij, pretvorbo podatkov v bajte in osnovno peer-to-peer komunikacijo.
+- Spoznal sem uporabo callback funkcij, pretvorbo podatkov v bajte in osnovno peer-to-peer komunikacijo.
+
