@@ -46,7 +46,8 @@ void setup() {
 void loop() {
   // Nič ni potrebno za ta del vaje
 }
-Kaj počne posamezen del kode
+```
+## Kaj počne posamezen del kode
 WiFi.mode(WIFI_STA) → ESP32 postane klient (se povezuje na WiFi)
 
 WiFi.begin(ssid, password) → začne povezavo na tvoj telefon HotSpot
@@ -57,11 +58,10 @@ WiFi.localIP() → vrne IP naslov ESP32, ki ga dodeli HotSpot
 
 WiFi.macAddress() → vrne MAC naslov ESP32
 
-Rezultat v Serial Monitorju
+## Rezultat v Serial Monitorju
 Primer izpisa:
 
 ruby
-Kopiraj kodo
 Connecting to WiFi...
 Connected!
 IP address: 192.168.43.123
@@ -70,9 +70,10 @@ IP address → naslov, ki ga ESP32 dobi od HotSpot-a
 
 MAC address → edinstvena identifikacija ESP32 naprave
 
-Zaključek
+## Zaključek
 ESP32 se uspešno poveže na HotSpot.
 
 Spoznal sem, kako pridobiti IP in MAC naslov ESP32.
+
 
 Naučil sem se, kako preverjati stanje WiFi povezave in kako uporabljati vgrajene funkcije WiFi.localIP() in WiFi.macAddress().
