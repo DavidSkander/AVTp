@@ -40,14 +40,12 @@ String message = "";
 for (int i = 0; i < len; i++) {
   message += (char)incomingData[i];
 }
-
+```
 ## Ugotovitve
-Serial.read() bere en znak naenkrat, zato moramo sami sestaviti celoten String.
+- Serial.read() bere en znak naenkrat, zato moramo sami sestaviti celoten String.
+- ESP-NOW zahteva pošiljanje podatkov kot array bajtov, zato uporabimo c_str().
+- Callback funkcije omogočajo, da se prejem podatkov obdeluje brez zasedanja loop().
+- Prenos deluje stabilno in hitro tudi brez WiFi omrežja.
 
-ESP-NOW zahteva pošiljanje podatkov kot array bajtov, zato uporabimo c_str().
-
-Callback funkcije omogočajo, da se prejem podatkov obdeluje brez zasedanja loop().
-
-Prenos deluje stabilno in hitro tudi brez WiFi omrežja.
 
 
