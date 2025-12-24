@@ -23,14 +23,14 @@ if (digitalRead(tipkaA) == LOW) {
   sporocilo += "A";
 }
 ``` 
-##Pošiljanje sporočila
+## Pošiljanje sporočila
 Sporočilo se pošlje ob pritisku tipke za pošiljanje:
 
 ``` cpp
 mySerial.println(sporocilo);
 sporocilo = "";
 ```
-##Sprejem podatkov v realnem času
+## Sprejem podatkov v realnem času
 Mikrokrmilnik sproti preverja, ali so na voljo podatki za sprejem:
 
 ```cpp
@@ -38,7 +38,7 @@ if (mySerial.available()) {
   Serial.write(mySerial.read());
 }
 ```
-##Ugotovitve
+## Ugotovitve
 Tipke omogočajo enostaven vnos znakov
 
 Programska serijska komunikacija omogoča dvosmerni prenos
@@ -49,3 +49,4 @@ Mikrokrmilnika lahko delujeta hkrati brez čakanja drug na drugega
 V vaji smo uspešno izdelali preprosto tipkovnico in omogočili realnočasovno
 
 komunikacijo med dvema mikrokrmilnikoma.
+
